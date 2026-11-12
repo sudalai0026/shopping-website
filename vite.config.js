@@ -5,4 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: '/shopping-website/',
   plugins: [react()],
+  build: {
+    cssMinify: false,
+  },
 })
