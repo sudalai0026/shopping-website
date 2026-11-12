@@ -10,7 +10,7 @@
     border: 1px solid aqua;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.6s ease-in-out;
 
     padding: 15px;
 
