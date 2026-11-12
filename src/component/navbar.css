@@ -31,9 +31,9 @@
     z-index: 1000;
     height: 70px;
     border: 1px blue solid; 
-    background: linear-gradient rgba(33, 53, 68, 0.45);
+    background: rgba(33, 53, 68, 0.45);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter:blur(5px)
+    -webkit-backdrop-filter: blur(5px);
 
 }
 
