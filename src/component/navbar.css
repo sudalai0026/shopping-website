@@ -15,7 +15,7 @@
     padding: 15px;
 
     position: relative;
-    bottom: 110px;
+    bottom: 120px;
     left: 700px;
 }
 
@@ -76,7 +76,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 70px;
+    height: 80px;
     border: 1px blue solid;
     background: rgba(33, 53, 68, 0.45);
     backdrop-filter: blur(5px);
@@ -84,15 +84,7 @@
 
 }
 
-.title {
-    font-size: 50px;
-    font-family: sans-serif;
-    position: relative;
-    top: 5px;
-    left: 20px;
-    color: rgb(135, 174, 218);
 
-}
 
 .log {
     cursor: pointer;
@@ -117,7 +109,7 @@
 
     position: relative;
     left: 920px;
-    top: -58px;
+    top: -68px;
 
     border: 1px solid;
     border-radius: 20px;
@@ -154,5 +146,24 @@
     object-fit: contain;
     cursor: pointer;
     cursor: pointer;
+
+}
+
+.title-image{
+
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: sans-serif;
+    position: relative;
+    top: -2px;
+    left: 30px;
+    color: rgb(135, 174, 218);
 
 }

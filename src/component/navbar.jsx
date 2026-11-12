@@ -1,4 +1,5 @@
 import image from "../Assets/image.png"
+import tittle from "../Assets/tittle.png"
 import { useState } from "react";
 import "./navbar.css"
 
@@ -10,7 +11,8 @@ function NavBar({ search, setsearch, setcategory }) {
     return (
 
         <nav className="back">
-
+            
+            <img className="title-image" src={tittle} alt="Shopping Cart" />
             <span className="title">QuickBuy </span>
             <div className="cantainer-search">
                 <input
