@@ -1,10 +1,12 @@
 import image from "../Assets/image.png"
-
+import { useState } from "react";
 import "./navbar.css"
 
 
 function NavBar({ search, setsearch, setcategory }) {
 
+    const [open, setopen] = useState(false);
+    const [selected,setSelected]=useState("Categorys")
     return (
 
         <nav className="back">
@@ -13,29 +15,35 @@ function NavBar({ search, setsearch, setcategory }) {
             <div className="cantainer-search">
                 <input
                     className="search"
-                    type="text"  placeholder="Search the Products..."
+                    type="text" placeholder="Search the Products..."
                     value={search}
-                    onChange={(i) => setsearch(i.target.value)}/>
-                
-                <img 
-                className="img"
-                src={image} />
+                    onChange={(i) => setsearch(i.target.value)} />
+
+                <img
+                    className="img"
+                    src={image} />
 
             </div>
 
-            <select className="nav"
-                onChange={(i) => setcategory(i.target.value)}
-            >
+            <button
+                className="nav"
+                onClick={() => setopen(!open)}
+            > 
+           
+               
+                {selected}
+            </button>
 
-                <option value="All">All </option>
-                <option value="T-Shirts">T-Shirts</option>
-                <option value="Trousers">Trousers</option>
-                <option value="Watches">Watches</option>
-                <option value="Footwear">Footwear</option>
-                <option value="Shirts">Shirts</option>
-
-            </select>
-
+            {open && (
+                <div className="dropdown-list">
+                    <p className="dropdown-item" onClick={() =>{ setcategory("All");setSelected("All");setopen(false)}}>  All</p>
+                    <p className="dropdown-item" onClick={() =>{ setcategory("T-Shirts");setSelected("T-Shirts");setopen(false)}}>T-Shirts</p>
+                    <p className="dropdown-item" onClick={() => {setcategory("Trousers");setSelected("Trousers");setopen(false)}}>Trousers</p>
+                    <p className="dropdown-item" onClick={() => {setcategory("Watches");setSelected("Watches");setopen(false)}}>Watches</p>
+                    <p className="dropdown-item" onClick={() => {setcategory("Footwear");setSelected("Footwear");setopen(false)}}>Footwear</p>
+                    <p className="dropdown-item" onClick={() => {setcategory("Shirts");setSelected("Shirts");setopen(false)}}>Shirts</p>
+                </div>
+            )}
 
         </nav>
     )

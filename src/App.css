@@ -29,7 +29,7 @@ body {
 
 .cart:hover{
     transform: scale(1.05) translateY(-4px);
-    box-shadow: 0 7px 20px rgba(3, 35, 216, 0.8);
+    box-shadow: 0 7px 20px rgb(45, 159, 235);
 }
 
 
@@ -48,7 +48,7 @@ div{
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     padding: 10px;
 }
@@ -85,15 +85,16 @@ button {
     width: 100%;
     height: 10px;
     padding: 15px;
+    border: 1px solid aqua;
     
 }
 
 .buttonn{
-    width: 200px;
+    width: 180px;
     height: 8px;
     font-size: 15px;
     position: relative;
-    left: 30px;
+    left: 12px;
 
     
 }

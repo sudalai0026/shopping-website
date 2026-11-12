@@ -1,28 +1,75 @@
 .nav {
-    
-   width: 200px;
-   font-family: sans-serif;
-   color: rgb(130, 134, 138);
-   padding: 3px;
-   font-size: 17px;
+    width: 200px;
+    padding: 8px;
+    font-size: 17px;
+    color: white;
    
-   transition: all 0.6s ease-in-out;
-   transform: scale(1);
+    background: rgba(33, 53, 68, 0.45);
+    backdrop-filter: blur(5px);
 
-   position: relative;
-   left: 700px;
-   bottom: 110px;
-    border-radius: 5px;
-   background:transparent;
-   
+    border: 1px solid aqua;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
+
+    padding: 15px;
+
+    position: relative;
+    bottom: 110px;
+    left: 700px;
 }
 
-.nav:hover{
-    transform: scale(1) translateY(-3px);
-    box-shadow: 0 5px 10px rgba(3, 35, 216, 0.8);
+.nav:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgb(31, 52, 241);
+    border-color: blue;
 }
 
+.dropdown-list {
+    width: 190px;
+
+    position: relative;
+    bottom: 110px;
+    left: 690px;
+
+    background: rgba(7, 7, 7, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(94, 94, 247);
+    border-radius: 10px;
+    color: aqua;
+    padding: 5px;
+}
+
+.dropdown-item {
+
+    font-size: 17px;
+    color: white;
+
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    transition: scale 0.6s ease-in-out;
+
+    opacity: 1;
+    animation:  dropdownShow 0.8s ease both;
+}
+
+.dropdown-item:hover {
+    scale: 1.08;
+  
+}
+
+@keyframes dropdownShow {
+    from {
+        opacity: 0;
+           translate: 0 -15px;
+    }
+
+    to {
+        opacity: 1;
+       translate: 0 0;
+    }
+}
 
 
 .back {
@@ -30,22 +77,23 @@
     top: 0;
     z-index: 1000;
     height: 70px;
-    border: 1px blue solid; 
+    border: 1px blue solid;
     background: rgba(33, 53, 68, 0.45);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
 }
 
-.title{
+.title {
     font-size: 50px;
-    font-family:sans-serif ;
+    font-family: sans-serif;
     position: relative;
     top: 5px;
     left: 20px;
     color: rgb(135, 174, 218);
 
 }
+
 .log {
     cursor: pointer;
     display: flex;
@@ -71,8 +119,8 @@
     left: 920px;
     top: -58px;
 
-    border: 1px solid ;
-    border-radius: 5px;
+    border: 1px solid;
+    border-radius: 20px;
 
     transition: all 0.6s ease-in-out;
     transform: scale(1);
@@ -83,20 +131,20 @@
 
 .cantainer-search:hover {
     transform: scale(1.05) translateY(-2px);
-    box-shadow: 0 5px 10px rgba(3, 35, 216, 0.8);
+    box-shadow: 0 5px 10px rgb(31, 52, 241);
     border-color: blue;
 }
 
 .search {
- 
-     font-family: sans-serif;
+
+    font-family: sans-serif;
     color: rgb(237, 239, 243);
     padding: 5px;
     font-size: 17px;
     border: 1px rgb(94, 94, 247);
     outline: none;
-    background:transparent;
-     cursor: pointer;
+    background: transparent;
+    cursor: pointer;
 }
 
 
@@ -105,6 +153,6 @@
     height: 25px;
     object-fit: contain;
     cursor: pointer;
-     cursor: pointer;
-   
+    cursor: pointer;
+
 }
