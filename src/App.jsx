@@ -26,10 +26,10 @@ function App() {
   .map(items =>
     <div className="cart" key={items._id}>
       <img src={items.img} alt="error" />
-      <h2 >Price: {items.price}</h2>
-      <h2 >StockQuantity: {items.stockQuantity}</h2>
-      <h2 >Name: {items.name}</h2>
-      <h2 >Size: {items.description}</h2>
+      <h4>Price: {items.price}</h4>
+      <h4 >StockQuantity: {items.stockQuantity}</h4>
+      <h4 >Name: {items.name}</h4>
+      <h4 >Size: {items.description}</h4>
       <button className="buttonn">ADD TO CART</button>
     </div>
   )
