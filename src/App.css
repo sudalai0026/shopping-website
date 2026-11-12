@@ -73,9 +73,11 @@ p {
 }
 
 button {
-    background:linear-gradient(180deg, rgb(55, 100, 158),40%,hsl(0, 0%, 27%));
+    background: rgba(5, 36, 59, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     opacity: 60%;
-    color: rgb(239, 241, 243);
+    color:white;
     font-size: 20px;
     display: flex;
     justify-content: center;
